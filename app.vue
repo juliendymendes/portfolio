@@ -1,10 +1,10 @@
 
 <template>
-  <main>
-		<nav>
+  <main class="bg-primary font-montserrat">
+		<nav class="bg-neutral p-5 flex justify-between">
 			<NuxtImg src="/logo.svg"/>
 
-			<ul>
+			<ul class="flex gap-5">
 				<li>Sobre mim</li>
 				<li>Experiência</li>
 				<li>Portfolio</li>
