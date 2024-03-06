@@ -1,19 +1,19 @@
 
 <template>
   <main class="bg-primary font-montserrat">
-		<nav class="bg-neutral p-5 flex justify-between">
+		<nav class="bg-transparent px-16 py-8 flex justify-between">
 			<NuxtImg src="/logo.svg"/>
 
-			<ul class="flex gap-5">
-				<li>Sobre mim</li>
-				<li>Experiência</li>
-				<li>Portfolio</li>
-				<li>Contato</li>
+			<ul class="flex gap-9 text-base-100 text-xl items-center">
+				<li class="cursor-pointer rounded-full hover:text-accent">Sobre mim</li>
+				<li class="cursor-pointer hover:text-accent">Experiência</li>
+				<li class="cursor-pointer hover:text-accent">Portfolio</li>
+				<li class="bg-base-100 text-dark font-semibold rounded-[10px] px-5 py-1 cursor-pointer hover:bg-accent hover:text-base-100">Contato</li>
 			</ul>
 		</nav>
     <section>
-      <h1>Olá, eu sou a Juliendy!</h1>
-      <h2>Desenvolvedora front-end há 2 anos</h2>
+      <h1 class="font-semibold text-4xl text-base-100">Olá, eu sou a Juliendy!</h1>
+      <h2 class="font-semibold text-2xl text-base-100">Desenvolvedora <span class="text-gradient-to-r from-neutral to-accent">front-end</span></h2>
       <button>Ver meu currículo</button>
       <NuxtImg src="/arrow-down.svg" />
     </section>
