@@ -1,7 +1,7 @@
 
 <template>
   <main class="bg-primary font-montserrat">
-		<nav class="bg-transparent px-16 py-8 flex justify-between">
+		<nav class="bg-primary px-16 py-8 flex justify-between relative z-50">
 			<NuxtImg src="/logo.svg"/>
 
 			<ul class="flex gap-9 text-base-100 text-xl items-center">
@@ -11,11 +11,20 @@
 				<li class="bg-base-100 text-dark font-semibold rounded-[10px] px-5 py-1 cursor-pointer hover:bg-accent hover:text-base-100">Contato</li>
 			</ul>
 		</nav>
-    <section>
-      <h1 class="font-semibold text-4xl text-base-100">Olá, eu sou a Juliendy!</h1>
-      <h2 class="font-semibold text-2xl text-base-100">Desenvolvedora <span class="text-gradient-to-r from-neutral to-accent">front-end</span></h2>
-      <button>Ver meu currículo</button>
-      <NuxtImg src="/arrow-down.svg" />
+    <section class="relative">
+			<div class="w-20 h-20 bg-gradient-to-r from-neutral via-gradient-middle to-accent rounded-full"></div>
+			<div class="w-28 h-28 bg-gradient-to-tr from-accent via-gradient-middle to-neutral rounded-full"></div>
+			<div class="w-36 h-36 bg-gradient-to-br from-neutral via-gradient-middle to-accent rounded-full"></div>
+			<div class="w-44 h-44 bg-gradient-to-tl from-neutral via-gradient-middle to-accent rounded-full"></div>
+
+			<div class="w-[300px] h-[285px] bg-secondary rounded-[30px] absolute -top-10 -left-20 rotate-[28deg]"></div>
+			<div class="w-80 h-56 bg-secondary rounded-[30px]"></div>
+			<div class="w-80 h-56 bg-secondary rounded-[30px]"></div>
+
+      <h1 class="font-semibold text-4xl text-base-100 text-center">Olá, eu sou a Juliendy!</h1>
+      <h2 class="font-semibold text-2xl text-base-100 text-center">Desenvolvedora <span class="bg-gradient-to-r from-neutral to-accent text-transparent bg-clip-text">front-end</span></h2>
+      <button class="bg-neutral text-base-100 px-10 py-2 rounded-[10px] font-semibold font-montserrat block mx-auto">Ver meu currículo</button>
+      <NuxtImg src="/arrow-down.svg" class="mx-auto" width="60"/>
     </section>
 
     <section>

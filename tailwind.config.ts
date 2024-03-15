@@ -8,7 +8,8 @@ export default {
 				accent: "#DD5ED8",
 				neutral: "#D4876A",
 				"base-100": "#FAFAFA",
-				"dark": "#02010F"
+				"dark": "#02010F",
+				"gradient-middle": "#D67A8C"
       },
 			fontFamily: {
 				montserrat: ["Montserrat", 'sans-serif']
