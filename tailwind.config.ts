@@ -3,16 +3,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#050133",
-				secondary: "#060142",
-				accent: "#DD5ED8",
-				neutral: "#D4876A",
+        primary: "#DD5ED8",
+				secondary: "#D2BDCB",
+				accent: "#CA56C5",
+				neutral: "#F5F1ED",
 				"base-100": "#FAFAFA",
 				"dark": "#02010F",
-				"gradient-middle": "#D67A8C"
       },
 			fontFamily: {
-				montserrat: ["Montserrat", 'sans-serif']
+				montserrat: ["Montserrat", 'sans-serif'],
+				poppins: ["Poppins", "sans-serif"]
 			},
 			boxShadow: {
 				'navHover': '0px 0px 96px 38px rgba(221,94,216,1)'
