@@ -18,7 +18,7 @@ export default {
 				'navHover': '0px 0px 96px 38px rgba(221,94,216,1)'
 			},
 			screens: {
-				'wide': '2000px'
+				'wide': '1900px'
 			}
     },
   },
