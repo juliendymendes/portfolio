@@ -12,8 +12,12 @@
         <NuxtLink to="/about">
           <li class="cursor-pointer hover:text-primary">Sobre mim</li>
         </NuxtLink>
-        <li class="cursor-pointer hover:text-primary">Projetos</li>
-        <li class="cursor-pointer hover:text-primary">Contato</li>
+        <NuxtLink to="/projects">
+          <li class="cursor-pointer hover:text-primary">Projetos</li>
+        </NuxtLink>
+        <NuxtLink to="/contact">
+          <li class="cursor-pointer hover:text-primary">Contato</li>
+        </NuxtLink>
       </ul>
     </nav>
     <slot />
@@ -26,8 +30,12 @@
           <NuxtLink to="/about">
             <li class="cursor-pointer hover:text-primary">Sobre mim</li>
           </NuxtLink>
-          <li class="cursor-pointer hover:text-primary">Projetos</li>
-          <li class="cursor-pointer hover:text-primary">Contato</li>
+          <NuxtLink to="/projects">
+            <li class="cursor-pointer hover:text-primary">Projetos</li>
+          </NuxtLink>
+          <NuxtLink to="/contact">
+            <li class="cursor-pointer hover:text-primary">Contato</li>
+          </NuxtLink>
         </ul>
 
         <div class="flex gap-x-2">
