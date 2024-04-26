@@ -7,9 +7,9 @@
       <div class="h-1 w-20 bg-primary"></div>
     </div>
 
-    <div class="mt-10 flex flex-col gap-32">
-      <div v-for="(project, index) in projects" :class="{'flex-row-reverse' : index % 2 !== 0}" class="flex items-center justify-around gap-10" :key="project.id">
-				<div class="max-w-[600px] flex flex-col gap-5">
+    <div class="mt-10 flex flex-col gap-12 md:gap-32">
+      <div v-for="(project, index) in projects" :class="{'lg:flex-row-reverse' : index % 2 !== 0}" class="flex flex-wrap-reverse items-center lg:justify-around gap-5 md:gap-10" :key="project.id">
+				<div class="md:max-w-[600px] flex flex-col gap-5 mx-3 md:mx-0">
 					<p class="font-medium text-dark text-xl">{{project.name}}</p>
 					<p class="font-normal text-dark text-base">
 						{{project.description}}
@@ -27,7 +27,7 @@
 					>
 				</div>
 
-				<NuxtImg :src="project.imageUrl" class="rounded-[10px]" width="500"/>
+				<NuxtImg :src="project.imageUrl" class="rounded-[10px] w-[500px] md:w-full lg:w-[500px]" />
       </div>
 
 

@@ -1,24 +1,23 @@
 <template>
-	<main class="overflow-y-hidden relative">
-   
-    <section class="h-screen flex items-center justify-between ">
-      <div class="flex flex-col gap-5 text-dark w-1/2">
-        <h1 class="text-wide">Olá, eu sou a Juliendy :)</h1>
-        <h2 class="text-5xl font-semibold">Desenvolvedora de software</h2>
-        <p class="text-xl">
+  <main class="overflow-x-hidden overflow-y-hidden relative">
+    <section class="pt-16 pb-24 xl:py-0 xl:h-screen flex items-center justify-between">
+      <div class="flex flex-col gap-5 text-dark lg:w-1/2">
+        <h1 class="text-lg">Olá, eu sou a Juliendy :)</h1>
+        <h2 class="text-3xl lg:text-5xl font-semibold">Desenvolvedora de software</h2>
+        <p class="text-lg">
           Sou apaixonada por desenvolvimento de software, com 2 anos de
           experiência em desenvolvimento criando interfaces de usuário atraentes
           e responsivas.
         </p>
         <NuxtLink
           to="/"
-          class="bg-primary hover:bg-accent py-4 px-20 w-fit inline-block rounded-full text-neutral text-xl"
+          class="bg-primary hover:bg-accent py-2 px-8 md:py-4 md:px-20 w-fit inline-block rounded-full text-neutral md:text-xl"
           >Meus projetos</NuxtLink
         >
       </div>
 
       <div>
-        <img src="/about-me.png" />
+        <NuxtImg src="/about-me.png" class="hidden lg:block lg:w-96"/>
       </div>
     </section>
 
@@ -30,7 +29,7 @@
         <div class="h-1 w-20 bg-primary"></div>
       </div>
 
-      <div class="mt-10 grid grid-cols-2 gap-9 bg-neutral">
+      <div class="mt-10 grid md:grid-cols-2 gap-9 bg-neutral">
         <div v-for="i in [1, 1, 2, 3]">
           <div
             class="rounded-[20px] p-10 w-full h-fit bg-[url('/background.png')] bg-center bg-cover bg-no-repeat"
@@ -48,71 +47,71 @@
       </div>
       <NuxtLink
         to="/"
-        class="bg-primary hover:bg-accent py-4 px-20 w-fit block mx-auto my-16 rounded-full text-neutral text-xl"
+        class="bg-primary hover:bg-accent py-2 px-8 md:py-4 md:px-20 w-fit block mx-auto my-16 rounded-full text-neutral md:text-xl"
         >Ver todos</NuxtLink
       >
     </section>
 
     <section class="mb-24">
-			<div>
+      <div>
         <h4 class="text-dark text-3xl font-medium leading-none">
           Skills<span class="text-primary">.</span>
         </h4>
         <div class="h-1 w-12 bg-primary"></div>
       </div>
 
-			<div class="grid grid-cols-4 gap-10 w-full my-10">
-				<div>
-					<p class="font-semibold text-xl text-dark">Front-end</p>
-					<ul class="text-lg text-dark">
-						<li>TypeScript</li>
-						<li>ReactJS/NextJS</li>
-						<li>VueJS/NuxtJS</li>
-						<li>TailwindCss</li>
-						<li>Bootstrap</li>
-						<li>Vuetify</li>
-					</ul>
-				</div>
+      <div class="grid md:grid-cols-4 gap-14 md:gap-10 w-full my-10 overflow-x-hidden">
+        <div>
+          <p class="font-semibold text-xl text-dark">Front-end</p>
+          <ul class="text-lg text-dark">
+            <li>TypeScript</li>
+            <li>ReactJS/NextJS</li>
+            <li>VueJS/NuxtJS</li>
+            <li>TailwindCss</li>
+            <li>Bootstrap</li>
+            <li>Vuetify</li>
+          </ul>
+        </div>
 
-				<div>
-					<p class="font-semibold text-xl text-dark">Back-end</p>
-					<ul class="text-lg text-dark">
-						<li>NodeJS</li>
-						<li>Java</li>
-						<li>Kotlin</li>
-						<li>Spring Boot</li>
-						<li>PostgreSQL</li>
-						<li>Docker</li>
-					</ul>
-				</div>
+        <div>
+          <p class="font-semibold text-xl text-dark">Back-end</p>
+          <ul class="text-lg text-dark">
+            <li>NodeJS</li>
+            <li>Java</li>
+            <li>Kotlin</li>
+            <li>Spring Boot</li>
+            <li>PostgreSQL</li>
+            <li>Docker</li>
+          </ul>
+        </div>
 
-				<div>
-					<p class="font-semibold text-xl text-dark">Projeto</p>
-					<ul class="text-lg text-dark">
-						<li>Scrum</li>
-						<li>Kanban</li>
-						<li>Clean Code</li>
-						<li>Gerência de projetos</li>
-						<li>Análise de requisitos</li>
-					</ul>
-				</div>
+        <div>
+          <p class="font-semibold text-xl text-dark">Projeto</p>
+          <ul class="text-lg text-dark">
+            <li>Scrum</li>
+            <li>Kanban</li>
+            <li>Clean Code</li>
+            <li>Gerência de projetos</li>
+            <li>Análise de requisitos</li>
+          </ul>
+        </div>
 
-				<div>
-					<p class="font-semibold text-xl text-dark">Web Design</p>
-					<ul class="text-lg text-dark">
-						<li>UX/UI Design</li>
-						<li>Wireframe</li>
-						<li>Figma</li>
-						<li>Responsividade</li>
-					</ul>
-				</div>
-			</div>
-		</section>
+        <div>
+          <p class="font-semibold text-xl text-dark">Web Design</p>
+          <ul class="text-lg text-dark">
+            <li>UX/UI Design</li>
+            <li>Wireframe</li>
+            <li>Figma</li>
+            <li>Responsividade</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-		
-
-		<button class="bg-primary w-16 h-16 rounded-full hover:bg-accent fixed bottom-8 right-14">
-			<NuxtImg src="/arrow-upward.svg" class="m-auto"/>
-		</button>
+    <button
+      class="bg-primary w-16 h-16 rounded-full hover:bg-accent fixed bottom-8 right-14"
+    >
+      <NuxtImg src="/arrow-upward.svg" width="24" class="m-auto" />
+    </button>
   </main>
 </template>

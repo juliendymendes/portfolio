@@ -15,18 +15,18 @@
 	
 			<div>
 				<div class="flex gap-2 items-center mb-4">
-					<NuxtImg src="/linkedin.svg" width="32"/>
-					<NuxtLink to="https://www.linkedin.com/in/juliendymendes/" class="text-dark">https://www.linkedin.com/in/juliendymendes/</NuxtLink>
+					<NuxtImg src="/linkedin.svg" class="w-6 md:w-8"/>
+					<NuxtLink to="https://www.linkedin.com/in/juliendymendes/" class="text-dark text-sm md:text-base">https://www.linkedin.com/in/juliendymendes/</NuxtLink>
 				</div>
 				<div class="flex gap-2 items-center">
-					<NuxtImg src="/mail.svg" width="32"/>
+					<NuxtImg src="/mail.svg" class="w-6 md:w-8"/>
 					<NuxtLink to="juliendy0708@gmail.com" class="text-dark">juliendy0708@gmail.com</NuxtLink>
 				</div>
 			</div>
 		</div>
 
 		<div class="wide:me-28">
-			<NuxtImg src="/contact.png" width="400"/>
+			<NuxtImg src="/contact.png" width="400" class="hidden lg:block"/>
 		</div>
   </section>
 </template>
