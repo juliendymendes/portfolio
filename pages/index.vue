@@ -1,23 +1,23 @@
 <template>
   <main class="overflow-x-hidden overflow-y-hidden relative">
-    <section class="pt-16 pb-24 xl:py-0 xl:h-screen flex items-center justify-between">
+    <section
+      class="pt-16 pb-24 xl:py-0 xl:h-screen flex items-center justify-between"
+    >
       <div class="flex flex-col gap-5 text-dark lg:w-1/2">
         <h1 class="text-lg">Olá, eu sou a Juliendy :)</h1>
-        <h2 class="text-3xl lg:text-5xl font-semibold">Desenvolvedora de software</h2>
+        <h2 class="text-3xl lg:text-5xl font-semibold">
+          Desenvolvedora de software
+        </h2>
         <p class="text-lg">
           Sou apaixonada por desenvolvimento de software, com 2 anos de
           experiência em desenvolvimento criando interfaces de usuário atraentes
           e responsivas.
         </p>
-        <NuxtLink
-          to="/"
-          class="bg-primary hover:bg-accent py-2 px-8 md:py-4 md:px-20 w-fit inline-block rounded-full text-neutral md:text-xl"
-          >Meus projetos</NuxtLink
-        >
+       <CustomLink url="/" text="Meus projetos"/> 
       </div>
 
       <div>
-        <NuxtImg src="/about-me.png" class="hidden lg:block lg:w-96"/>
+        <NuxtImg src="/about-me.png" class="hidden lg:block lg:w-96" />
       </div>
     </section>
 
@@ -45,11 +45,7 @@
           </div>
         </div>
       </div>
-      <NuxtLink
-        to="/"
-        class="bg-primary hover:bg-accent py-2 px-8 md:py-4 md:px-20 w-fit block mx-auto my-16 rounded-full text-neutral md:text-xl"
-        >Ver todos</NuxtLink
-      >
+      <CustomLink url="/projects" text="Ver todos" class="mx-auto my-16"/>
     </section>
 
     <section class="mb-24">
@@ -60,7 +56,9 @@
         <div class="h-1 w-12 bg-primary"></div>
       </div>
 
-      <div class="grid md:grid-cols-4 gap-14 md:gap-10 w-full my-10 overflow-x-hidden">
+      <div
+        class="grid md:grid-cols-4 gap-14 md:gap-10 w-full my-10 overflow-x-hidden"
+      >
         <div>
           <p class="font-semibold text-xl text-dark">Front-end</p>
           <ul class="text-lg text-dark">
@@ -109,7 +107,7 @@
     </section>
 
     <button
-      class="bg-primary w-16 h-16 rounded-full hover:bg-accent fixed bottom-8 right-14"
+      class="bg-primary w-16 h-16 rounded-full hover:bg-accent fixed bottom-8 right-14 z-50"
     >
       <NuxtImg src="/arrow-upward.svg" width="24" class="m-auto" />
     </button>

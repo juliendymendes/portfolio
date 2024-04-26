@@ -20,11 +20,7 @@
 							>{{ project.githubLink}}</NuxtLink
 						>
 					</div>
-					<NuxtLink
-						:to="project.websiteLink"
-						class="bg-primary hover:bg-accent py-2 px-10 w-fit block rounded-full text-neutral text-base"
-						>Visualizar projeto</NuxtLink
-					>
+					<CustomLink :url="project.websiteLink" text="Visualizar projeto"/>
 				</div>
 
 				<NuxtImg :src="project.imageUrl" class="rounded-[10px] w-[500px] md:w-full lg:w-[500px]" />

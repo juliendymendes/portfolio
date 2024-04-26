@@ -40,7 +40,7 @@
           <time>2022</time>
           <p class="text-lg font-semibold">Estagiária de desenvolvimento front-end</p>
           <p class="font-medium text-base my-2">Startup Sesi Fiems (Abr/2022 - Abr/2024)</p>
-          Atuação no desenvolvimento front-end de aplicações web com Vue.js, React, Next.js, TailwindCss e JavaScript/TypeScript e no desenvolvimento mobile utilizando React Native além de participar das decisões de projeto e levantamento de requisitos.
+         <p class="mb-5 md:mb-0">Atuação no desenvolvimento front-end de aplicações web com Vue.js, React, Next.js, TailwindCss e JavaScript/TypeScript e no desenvolvimento mobile utilizando React Native além de participar das decisões de projeto e levantamento de requisitos.</p>
         </div>
         <hr />
       </li>
@@ -70,7 +70,6 @@
         </div>
         
       </li>
-      
     </ul>
   </section>
 </template>
