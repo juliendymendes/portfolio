@@ -5,7 +5,8 @@ export default withNuxt(
 	{
 		files: ["pages/*.vue", "components/*.vue", "*.vue"],
 		rules: {
-			semi: "error"
+			semi: "error",
+			"vue/multi-word-component-names": "off"
 		},
 		linterOptions: {
 			reportUnusedDisableDirectives: "error"
