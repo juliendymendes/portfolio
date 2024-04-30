@@ -32,7 +32,7 @@
 				<div v-for="i in [1, 1, 2, 3]" :key="i">
 					<div
 						class="rounded-[20px] p-10 w-full h-fit bg-[url('/background.png')] bg-center bg-cover bg-no-repeat">
-						<img src="/example.png" width="400" class="m-auto" />
+						<NuxtImg src="/example.png" width="400" class="m-auto" />
 					</div>
 					<div class="mt-4 ms-4">
 						<p class="text-dark font-medium text-lg">Projeto {{ i }}</p>
