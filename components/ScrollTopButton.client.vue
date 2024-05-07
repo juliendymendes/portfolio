@@ -1,8 +1,8 @@
 <template>
 	<button
 		id="scrollToTop"
-		@click="topFunction"
-		class="bg-primary hidden w-16 h-16 rounded-full hover:bg-accent fixed bottom-8 right-14 z-50">
+		class="bg-primary hidden w-16 h-16 rounded-full hover:bg-accent fixed bottom-8 right-14 z-50"
+		@click="topFunction">
 		<NuxtImg src="/arrow-upward.svg" width="24" class="m-auto" />
 	</button>
 </template>

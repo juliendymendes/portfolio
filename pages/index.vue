@@ -29,16 +29,18 @@
 			</div>
 
 			<div class="mt-10 grid md:grid-cols-2 gap-9 bg-neutral">
-				<div v-for="i in [1, 1, 2, 3]" :key="i">
+				<div v-for="project in projectsStore.getProjects" :key="project.id">
 					<div
-						class="rounded-[20px] p-10 w-full h-fit bg-[url('/background.png')] bg-center bg-cover bg-no-repeat">
-						<NuxtImg src="/example.png" width="400" class="m-auto" />
+						class="rounded-[20px] flex p-10 w-full h-[350px] bg-[url('/background.png')] bg-center bg-cover bg-no-repeat">
+						<NuxtImg
+							:src="project.imageUrl || '/example.png'"
+							width="400"
+							class="m-auto" />
 					</div>
 					<div class="mt-4 ms-4">
-						<p class="text-dark font-medium text-lg">Projeto {{ i }}</p>
+						<p class="text-dark font-medium text-lg">{{ project.name }}</p>
 						<p class="text-dark text-base relative z-50 whitespace-pre-line">
-							Lorem ipsum dolor sit amet consectetur. Congue non aenean dictum
-							phasellus.
+							{{ project.description }}
 						</p>
 					</div>
 				</div>
@@ -103,9 +105,10 @@
 			</div>
 		</section>
 
-		<button
-			class="bg-primary w-16 h-16 rounded-full hover:bg-accent fixed bottom-8 right-14 z-50">
-			<NuxtImg src="/arrow-upward.svg" width="24" class="m-auto" />
-		</button>
+		<ScrollTopButton />
 	</main>
 </template>
+
+<script setup lang="ts">
+const projectsStore = useProjectsStore();
+</script>

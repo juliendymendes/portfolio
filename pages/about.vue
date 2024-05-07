@@ -9,16 +9,21 @@
 			</div>
 
 			<p class="text-dark max-w-[1000px] my-10">
-				Lorem ipsum dolor sit amet consectetur. Lectus mattis tincidunt ornare
-				molestie. Neque arcu est elit nulla convallis ut purus. At ut morbi
-				proin eu ullamcorper donec vel ultrices. Morbi consectetur purus vivamus
-				aliquet sit vestibulum sed. Tortor amet ut risus duis sit velit eget
-				vestibulum pretium. Tellus iaculis vel arcu praesent. Diam arcu accumsan
-				mi tortor phasellus. Senectus dui leo purus integer orci at. Etiam
-				dignissim cras nisl natoque lorem amet adipiscing non fames. Mattis
-				molestie rhoncus bibendum malesuada imperdiet purus tristique vitae.
-				Eget lorem ac tellus nullam et tempor. Purus cursus enim sed id enim
-				fringilla. Faucibus eget purus a lectus.
+				Sou apaixonada por desenvolvimento de software, tenho habilidades em
+				frameworks como Vue.js 3, React, Nextjs e React Native e sou capaz de
+				criar interfaces de usuário atraentes e responsivas, tanto para
+				aplicações web quanto para aplicativos móveis.
+				<br />
+				<br />
+				Além disso, possuo conhecimento em controle de versionamento utilizando
+				o Git e colaboração em equipe com Azure DevOps. Estou familiarizada com
+				a metodologia Scrum, o que me permite contribuir de forma eficaz em
+				projetos colaborativos.
+				<br />
+				<br />
+				Estou constantemente buscando aprender novas tecnologias e aprimorar
+				minhas habilidades. Sou proativa, organizada e comprometida com a
+				entrega de produtos de alta qualidade.
 			</p>
 		</section>
 

@@ -9,7 +9,7 @@
 
 		<div class="mt-10 flex flex-col gap-12 md:gap-32">
 			<div
-				v-for="(project, index) in projects"
+				v-for="(project, index) in projectsStore.getProjects"
 				:key="project.id"
 				:class="{ 'lg:flex-row-reverse': index % 2 !== 0 }"
 				class="flex flex-wrap-reverse items-center lg:justify-around gap-5 md:gap-10">
@@ -24,58 +24,20 @@
 							project.githubLink
 						}}</NuxtLink>
 					</div>
-					<CustomLink :url="project.websiteLink" text="Visualizar projeto" />
+					<CustomLink
+						v-if="project.websiteLink"
+						:url="project.websiteLink"
+						text="Visualizar projeto" />
 				</div>
 
 				<NuxtImg
 					:src="project.imageUrl"
-					class="rounded-[10px] w-[500px] md:w-full lg:w-[500px]" />
+					class="rounded-[10px] w-[500px] md:w-full lg:w-[600px]" />
 			</div>
 		</div>
 	</section>
 </template>
 
 <script setup lang="ts">
-const projects = reactive([
-	{
-		id: 1,
-		name: "Project 1",
-		description: "This is the first project.",
-		githubLink: "https://github.com/",
-		websiteLink:
-			"https://www.hostinger.com/tutorials/portfolio-website-examples",
-		imageUrl:
-			"https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-	},
-	{
-		id: 2,
-		name: "Project 2",
-		description: "This is the second project.",
-		githubLink: "https://github.com/",
-		websiteLink:
-			"https://www.hostinger.com/tutorials/portfolio-website-examples",
-		imageUrl:
-			"https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-	},
-	{
-		id: 3,
-		name: "Project 3",
-		description: "This is the third project.",
-		githubLink: "https://github.com/",
-		websiteLink:
-			"https://www.hostinger.com/tutorials/portfolio-website-examples",
-		imageUrl:
-			"https://images.unsplash.com/photo-1570215171323-4ec328f3f5fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-	},
-	{
-		id: 4,
-		name: "Project 4",
-		description: "This is the fouth project.",
-		githubLink: "https://github.com/",
-		websiteLink:
-			"https://www.hostinger.com/tutorials/portfolio-website-examples",
-		imageUrl:
-			"https://images.unsplash.com/photo-1570215171323-4ec328f3f5fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-	},
-]);
+const projectsStore = useProjectsStore();
 </script>

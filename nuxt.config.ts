@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxt/image",
     "@nuxtjs/google-fonts",
-    "@nuxt/eslint"
+    "@nuxt/eslint",
+		"@pinia/nuxt"
   ],
   tailwindcss: {
     cssPath: "/assets/css/main.css",
