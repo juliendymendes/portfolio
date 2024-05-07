@@ -24,7 +24,7 @@
 				</div>
 				<div class="flex gap-2 items-center">
 					<NuxtImg src="/mail.svg" class="w-6 md:w-8" />
-					<NuxtLink to="juliendy0708@gmail.com" class="text-dark"
+					<NuxtLink to="mailto:juliendy0708@gmail.com" class="text-dark"
 						>juliendy0708@gmail.com</NuxtLink
 					>
 				</div>

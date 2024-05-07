@@ -12,7 +12,7 @@
 					experiência em desenvolvimento criando interfaces de usuário atraentes
 					e responsivas.
 				</p>
-				<CustomLink url="/" text="Meus projetos" />
+				<CustomLink url="/projects" text="Meus projetos" />
 			</div>
 
 			<div>

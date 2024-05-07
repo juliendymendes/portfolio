@@ -28,8 +28,12 @@
 			</div>
 		</div>
 		<div class="flex gap-x-2">
-			<NuxtImg src="/github.svg" class="cursor-pointer" width="32" />
-			<NuxtImg src="/linkedin.svg" class="cursor-pointer" width="32" />
+			<NuxtLink to="https://github.com/juliendymendes">
+				<NuxtImg src="/github.svg" class="cursor-pointer" width="32" />
+			</NuxtLink>
+			<NuxtLink to="https://www.linkedin.com/in/juliendymendes/">
+				<NuxtImg src="/linkedin.svg" class="cursor-pointer" width="32" />
+			</NuxtLink>
 		</div>
 	</footer>
 </template>
