@@ -1,5 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+	app: {
+		head: {
+			charset: "utf-8",
+			title: "Juliendy Mendes",
+			link: [{rel: 'icon', type: 'image/svg+xml', href: '/logo.svg'}] 
+		}
+	},
   devtools: { enabled: false },
   modules: [
     "@nuxtjs/tailwindcss",
