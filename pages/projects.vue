@@ -32,7 +32,7 @@
 
 				<NuxtImg
 					:src="project.imageUrl"
-					class="rounded-[10px] w-[500px] md:w-full lg:w-[600px]" />
+					class="rounded-[10px] w-[500px] md:w-full lg:w-[580px]" />
 			</div>
 		</div>
 	</section>

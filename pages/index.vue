@@ -35,7 +35,6 @@
 						<NuxtImg
 							:src="project.imageUrl || '/example.png'"
 							width="400"
-							height="500"
 							sizes="300px md:400px"
 							class="m-auto" />
 					</div>
