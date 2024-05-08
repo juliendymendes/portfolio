@@ -1,11 +1,12 @@
 <template>
 	<nav class="bg-neutral py-8 relative flex justify-between">
 		<NuxtLink to="/">
-			<NuxtImg src="/logo.svg" width="20" class="cursor-pointer" />
+			<NuxtImg src="/logo.svg" width="20" height="20" lass="cursor-pointer" />
 		</NuxtLink>
 		<NuxtImg
 			src="/menu.svg"
 			width="24"
+			height="24"
 			class="md:hidden cursor-pointer"
 			@click="toggleMenu" />
 

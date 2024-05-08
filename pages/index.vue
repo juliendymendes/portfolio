@@ -35,6 +35,8 @@
 						<NuxtImg
 							:src="project.imageUrl || '/example.png'"
 							width="400"
+							height="500"
+							sizes="300px md:400px"
 							class="m-auto" />
 					</div>
 					<div class="mt-4 ms-4">
@@ -110,5 +112,6 @@
 </template>
 
 <script setup lang="ts">
+import ScrollTopButton from "~/components/ScrollTopButton.client.vue";
 const projectsStore = useProjectsStore();
 </script>
