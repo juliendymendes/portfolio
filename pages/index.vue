@@ -29,7 +29,9 @@
 			</div>
 
 			<div class="mt-10 grid md:grid-cols-2 gap-9 bg-neutral">
-				<div v-for="project in projectsStore.getProjects" :key="project.id">
+				<div
+					v-for="project in projectsStore.getProjects.slice(0, 4)"
+					:key="project.id">
 					<div
 						class="rounded-[20px] flex p-10 w-full h-[350px] bg-[url('/background.png')] bg-center bg-cover bg-no-repeat">
 						<NuxtImg
@@ -38,9 +40,11 @@
 							sizes="300px md:400px"
 							class="m-auto" />
 					</div>
-					<div class="mt-4 ms-4">
-						<p class="text-dark font-medium text-lg">{{ project.name }}</p>
-						<p class="text-dark text-base relative z-50 whitespace-pre-line">
+					<div class="mt-4 ms-4 pt-3">
+						<StackBadges :stacks="project.stack" />
+						<p class="text-dark font-medium text-lg my-3">{{ project.name }}</p>
+
+						<p class="text-dark text-base line-clamp-3">
 							{{ project.description }}
 						</p>
 					</div>

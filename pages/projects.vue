@@ -14,11 +14,12 @@
 				:class="{ 'lg:flex-row-reverse': index % 2 !== 0 }"
 				class="flex flex-wrap-reverse items-center lg:justify-around gap-5 md:gap-10">
 				<div class="md:max-w-[600px] flex flex-col gap-5 mx-3 md:mx-0">
+					<StackBadges :stacks="project.stack" />
 					<p class="font-medium text-dark text-xl">{{ project.name }}</p>
 					<p class="font-normal text-dark text-base">
 						{{ project.description }}
 					</p>
-					<div class="flex gap-2 items-center">
+					<div v-if="project.githubLink" class="flex gap-2 items-center">
 						<NuxtImg src="/github.svg" width="20" />
 						<NuxtLink :to="project.githubLink" class="text-dark">{{
 							project.githubLink
@@ -27,6 +28,7 @@
 					<CustomLink
 						v-if="project.websiteLink"
 						:url="project.websiteLink"
+						target="_blank"
 						text="Visualizar projeto" />
 				</div>
 
@@ -39,5 +41,7 @@
 </template>
 
 <script setup lang="ts">
+import StackBadges from "~/components/StackBadges.vue";
+
 const projectsStore = useProjectsStore();
 </script>
