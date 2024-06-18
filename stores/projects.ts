@@ -52,8 +52,7 @@ const data: Project[] = [
 		description:
 			"Permite a visualização de destinos espaciais, tripulações e tecnologias de lançamento para viagens ao espaço.",
 		githubLink: "https://github.com/juliendymendes/space-tourism",
-		websiteLink:
-			"https://space-tourism-b58k2c2xw-juliendymendes-projects.vercel.app/",
+		websiteLink: "https://space-tourism-mission.vercel.app/",
 		imageUrl: "/projects/space-tourism.png",
 		stack: [{ name: "Nuxt" }, { name: "TypeScript" }, { name: "TailwindCSS" }],
 	},
