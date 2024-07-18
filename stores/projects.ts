@@ -56,6 +56,27 @@ const data: Project[] = [
 		imageUrl: "/projects/space-tourism.png",
 		stack: [{ name: "Nuxt" }, { name: "TypeScript" }, { name: "TailwindCSS" }],
 	},
+	{
+		id: 5,
+		name: "plann.er",
+		description:
+			"Permite a criação de uma viagem com destino e data, convite por e-mail de convidados e criação de atividades.",
+		githubLink: "https://github.com/juliendymendes/planner",
+		websiteLink: null,
+		imageUrl: "/projects/planner.png",
+		stack: [{ name: "React" }, { name: "TypeScript" }, { name: "TailwindCSS" }],
+	},
+	{
+		id: 6,
+		name: "API do projeto plann.er",
+		description:
+			"API do projeto plann.er que permite a criação de uma viagem, o envio de convite para os convidados e a criação de atividades. A api salva todos os dados no banco de dados.",
+		githubLink: "https://github.com/juliendymendes/planner-api",
+		websiteLink: null,
+		imageUrl:
+			"https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		stack: [{ name: "Java" }],
+	},
 ];
 export const useProjectsStore = defineStore("projectsStore", {
 	state: () => ({
