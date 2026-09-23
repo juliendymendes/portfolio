@@ -1,3 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+	--font-sora: "Sora", sans-serif;
+	--font-manrope: "Manrope", sans-serif;
+	--font-body: var(--font-manrope);
+
+	--color-primary: #1f4a4d;
+	--color-surface: #fcfbf8;
+	--color-ink: #1c1d1b;
+	--color-accent: #c89b52;
+	--color-muted: #777b76;
+	--color-canvas: #f6f4ef;
+	--color-border: #dedcd5;
+}

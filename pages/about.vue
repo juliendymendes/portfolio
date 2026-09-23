@@ -1,5 +1,5 @@
 <template>
-	<section>
+	<section id="about">
 		<section class="mt-16">
 			<div>
 				<h1 class="text-dark text-3xl font-medium leading-none">

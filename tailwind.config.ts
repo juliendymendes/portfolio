@@ -1,25 +1,22 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 export default {
-  plugins: [require("daisyui")],
-  theme: {
-    extend: {
-      colors: {
-        primary: "#DD5ED8",
+	plugins: [require("daisyui")],
+	theme: {
+		extend: {
+			colors: {
+				primary: "#1F4A4D",
 				secondary: "#D2BDCB",
-				accent: "#CA56C5",
+				accent: "#C89B52",
+				muted: "#777B76",
 				neutral: "#F5F1ED",
-				"base-100": "#FAFAFA",
-				"dark": "#02010F",
-      },
-			fontFamily: {
-				montserrat: ["Montserrat", 'sans-serif'],
-				poppins: ["Poppins", "sans-serif"]
-			},
-			boxShadow: {
-				'navHover': '0px 0px 96px 38px rgba(221,94,216,1)'
+				ink: "#1C1D1B",
+				surface: "#FCFBF8",
+				canvas: "#F6F4EF",
+				border: "#DEDCD5",
 			},
 			screens: {
-				'wide': '1900px'
-			}
-    },
-  },
+				wide: "1900px",
+			},
+		},
+	},
 };

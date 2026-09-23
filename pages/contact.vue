@@ -1,5 +1,5 @@
 <template>
-	<section class="flex justify-between py-20">
+	<section id="contact" class="flex justify-between py-20">
 		<div class="flex flex-col gap-5 justify-center">
 			<div>
 				<h1 class="text-dark text-3xl font-medium leading-none">

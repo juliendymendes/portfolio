@@ -1,5 +1,5 @@
 <template>
-	<section class="py-20">
+	<section id="projects" class="py-20">
 		<div>
 			<h1 class="text-dark text-3xl font-medium leading-none">
 				Meus projetos<span class="text-primary">.</span>
