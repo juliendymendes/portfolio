@@ -4,5 +4,4 @@ node_modules
 *.json
 *.config.js
 *.md
-*.config.ts
 *.config.mjs
