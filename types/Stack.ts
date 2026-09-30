@@ -10,7 +10,8 @@ export type TStack =
 	| "TailwindCSS"
 	| "Vuetify"
 	| "Bootstrap"
-	| "SASS";
+	| "SASS"
+	| "Spring Boot";
 
 export interface Stack {
 	name: TStack;

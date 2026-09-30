@@ -6,6 +6,7 @@ export interface Project {
 	description: string;
 	githubLink: string | null;
 	websiteLink: string | null;
-	imageUrl: string;
+	imageUrl: string | null;
 	stack: Stack[];
+	year?: number;
 }

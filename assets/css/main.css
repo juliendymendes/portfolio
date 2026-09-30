@@ -1,8 +1,65 @@
 @import "tailwindcss";
 
+@plugin "daisyui" {
+	themes: portfolio --default;
+}
+
+@plugin "daisyui/theme" {
+	name: "portfolio";
+	default: true;
+	color-scheme: light;
+
+	/* Cores principais */
+	--color-primary: #1f4a4d;
+	--color-primary-content: #fcfbf8;
+
+	--color-secondary: #c89b52;
+	--color-secondary-content: #1c1d1b;
+
+	--color-accent: #c89b52;
+	--color-accent-content: #1c1d1b;
+
+	/* Cores neutras */
+	--color-neutral: #1c1d1b;
+	--color-neutral-content: #fcfbf8;
+
+	/* Superfícies */
+	--color-base-100: #fcfbf8;
+	--color-base-200: #f6f4ef;
+	--color-base-300: #dedcd5;
+	--color-base-content: #1c1d1b;
+
+	/* Estados */
+	--color-info: #1f4a4d;
+	--color-info-content: #fcfbf8;
+
+	--color-success: #557a61;
+	--color-success-content: #fcfbf8;
+
+	--color-warning: #c89b52;
+	--color-warning-content: #1c1d1b;
+
+	--color-error: #a65353;
+	--color-error-content: #fcfbf8;
+
+	/* Bordas e componentes */
+	--radius-selector: 0.5rem;
+	--radius-field: 0.5rem;
+	--radius-box: 0.75rem;
+
+	--size-selector: 0.25rem;
+	--size-field: 0.25rem;
+
+	--border: 1px;
+
+	--depth: 0;
+	--noise: 0;
+}
+
 @theme {
 	--font-sora: "Sora", sans-serif;
 	--font-manrope: "Manrope", sans-serif;
+	--font-jetbrains: "JetBrains Mono", monospace;
 	--font-body: var(--font-manrope);
 
 	--color-primary: #1f4a4d;
@@ -12,4 +69,12 @@
 	--color-muted: #777b76;
 	--color-canvas: #f6f4ef;
 	--color-border: #dedcd5;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+::selection {
+	background: #c89b52;
+	color: #1c1d1b;
 }

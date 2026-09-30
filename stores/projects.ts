@@ -9,8 +9,7 @@ const data: Project[] = [
 		githubLink: null,
 		websiteLink:
 			"https://nes.facom.ufms.br/projeto/centro-de-memoria-de-enfermagem-de-mato-grosso-do-sul-memoenf",
-		imageUrl:
-			"https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		imageUrl: null,
 		stack: [{ name: "Vue.js" }, { name: "JavaScript" }, { name: "Bootstrap" }],
 	},
 	{
@@ -21,8 +20,7 @@ const data: Project[] = [
 		githubLink: null,
 		websiteLink:
 			"https://nes.facom.ufms.br/projeto/sieven-sistema-de-gestao-de-eventos",
-		imageUrl:
-			"https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		imageUrl: null,
 		stack: [{ name: "Vue.js" }, { name: "JavaScript" }, { name: "Vuetify" }],
 	},
 	{
@@ -31,20 +29,9 @@ const data: Project[] = [
 		description:
 			"Projeto que permite a busca da localização, timezone e ISP de um endereço IP ou domínio. Além de exibir essas informações, o projeto exibe um mapa da localização do endereço IP ou domínio inserido.",
 		githubLink: "https://github.com/juliendymendes/ip-address-tracker",
-		websiteLink: "https://tracki.vercel.app/",
+		websiteLink: null,
 		imageUrl: "/projects/ip-address-tracker.png",
 		stack: [{ name: "Vue.js" }, { name: "JavaScript" }, { name: "SASS" }],
-	},
-	{
-		id: 3,
-		name: "API de Certificações",
-		description:
-			"API desenvolvida durante o NLW 14 da Rocketseat que oferece interfaces para buscar questões, um ranking de Top 10 notas e cadastrar a resposta de um aluno em uma certificação.",
-		githubLink: "https://github.com/juliendymendes/nlw_java",
-		websiteLink: null,
-		imageUrl:
-			"https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		stack: [{ name: "Java" }, { name: "PostgreSQL" }],
 	},
 	{
 		id: 4,
@@ -73,9 +60,8 @@ const data: Project[] = [
 			"API do projeto plann.er que permite a criação de uma viagem, o envio de convite para os convidados e a criação de atividades. A api salva todos os dados no banco de dados.",
 		githubLink: "https://github.com/juliendymendes/planner-api",
 		websiteLink: null,
-		imageUrl:
-			"https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		stack: [{ name: "Java" }],
+		imageUrl: null,
+		stack: [{ name: "Java" }, { name: "Spring Boot" }],
 	},
 ];
 export const useProjectsStore = defineStore("projectsStore", {
