@@ -6,7 +6,27 @@ export default defineNuxtConfig({
 		head: {
 			charset: "utf-8",
 			title: "Juliendy Mendes",
-			link: [{ rel: "icon", type: "image/svg+xml", href: "/logo.svg" }],
+			link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+			meta: [
+				{
+					name: "description",
+					content: "Perfil profissional de Juliendy Mendes",
+				},
+				{ property: "og:title", content: "Juliendy Mendes" },
+				{
+					property: "og:description",
+					content: "Perfil profissional de Juliendy Mendes",
+				},
+				{ property: "og:image", content: "https://juliendy.vercel.app" },
+				{ property: "og:type", content: "website" },
+				{ name: "twitter:card", content: "summary_large_image" },
+				{ name: "twitter:title", content: "Juliendy Mendes" },
+				{
+					name: "twitter:description",
+					content: "Perfil profissional de Juliendy Mendes",
+				},
+				{ name: "twitter:image", content: "https://juliendy.vercel.app" },
+			],
 		},
 	},
 	devtools: { enabled: false },
