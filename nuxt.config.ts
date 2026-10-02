@@ -30,7 +30,14 @@ export default defineNuxtConfig({
 		},
 	},
 	devtools: { enabled: false },
-	modules: ["@nuxt/image", "@nuxt/eslint", "@pinia/nuxt", "@nuxt/fonts"],
+	modules: [
+		"@nuxt/image",
+		"@nuxt/eslint",
+		"@pinia/nuxt",
+		"@nuxt/fonts",
+		"@nuxt/icon",
+		"@vueuse/nuxt",
+	],
 	css: ["~/assets/css/main.css"],
 	fonts: {
 		families: [
@@ -45,5 +52,9 @@ export default defineNuxtConfig({
 	},
 	vite: {
 		plugins: [tailwindcss()],
+	},
+	icon: {
+		mode: "css",
+		cssLayer: "base",
 	},
 });

@@ -1,8 +1,8 @@
 <template>
-	<main id="topo" class="overflow-x-hidden overflow-y-hidden relative">
+	<main id="topo" class="relative overflow-x-hidden">
 		<section
-			class="pt-52.5 pb-24 flex gap-5 justify-between border-b border-border">
-			<div class="flex flex-col gap-5">
+			class="pt-44 pb-20 flex flex-col gap-8 md:pt-52.5 md:pb-24 md:flex-row md:items-center md:justify-between md:gap-10 border-b border-border">
+			<div class="flex flex-col gap-5 w-full md:max-w-[55%]">
 				<div
 					class="bg-surface text-ink border border-border rounded-full w-fit px-4 py-1.5 font-jetbrains text-xs font-medium">
 					<div class="inline-grid *:[grid-area:1/1]">
@@ -12,28 +12,28 @@
 					Disponível para novos projetos
 				</div>
 				<h1
-					class="m-0 font-sora font-semibold leading-[0.95] spacing-[-0.055em] text-ink text-[clamp(52px,10.5vw,152px)]">
+					class="m-0 font-sora font-semibold leading-[0.95] tracking-[-0.055em] text-ink text-[clamp(80px,7vw,152px)] md:text-[clamp(70px,8vw,152px)] lg:text-[clamp(80px,10.5vw,152px)] 2xl:text-[clamp(100px,7vw,190px)] 3xl:text-[clamp(110px,6vw,220px)]">
 					Juliendy<br /><span class="text-primary">Mendes</span
 					><span class="text-accent">.</span>
 				</h1>
 				<div class="mt-[clamp(40px,6vw,72px)] flex flex-col gap-10">
 					<p
-						class="m-0 text-[clamp(19px,1.8vw,23px)] leading-normal max-w-[40ch] text-pretty text-ink">
+						class="m-0 text-[clamp(16px,1.8vw,23px)] leading-normal max-w-[40ch] text-pretty text-ink 2xl:text-[28px] 3xl:text-[32px]">
 						Engenheira de software construindo produtos digitais
 						<span class="font-sora text-primary font-semibold"
 							>claros, rápidos e bem pensados</span
 						>
 						— do back-end à interface.
 					</p>
-					<div class="flex gap-3 flex-wrap justify-start">
+					<div class="flex flex-col lg:flex-row gap-3 justify-start">
 						<NuxtLink
 							to="#projetos"
-							class="px-5.5 py-3.5 rounded-full bg-primary text-canvas font-semibold text-[15px] hover:bg-ink"
+							class="px-5.5 py-3.5 rounded-full bg-primary text-canvas font-semibold text-[15px] hover:bg-ink text-center 2xl:text-[17px] 2xl:px-6 2xl:py-4 3xl:text-[18px] 3xl:px-7 3xl:py-4.5"
 							>Ver projetos →</NuxtLink
 						>
 						<NuxtLink
 							href="#contato"
-							class="px-5.5 py-3.5 rounded-full border border-ink text-ink font-semibold text-[15px] hover:bg-ink hover:text-canvas"
+							class="px-5.5 py-3.5 rounded-full border border-ink text-ink font-semibold text-[15px] hover:bg-ink hover:text-canvas text-center 2xl:text-[17px] 2xl:px-6 2xl:py-4 3xl:text-[18px] 3xl:px-7 3xl:py-4.5"
 							>Entrar em contato</NuxtLink
 						>
 					</div>
@@ -41,7 +41,8 @@
 			</div>
 
 			<div
-				class="mockup-code bg-gray-900 text-gray-300 shadow-xl w-[800px] h-[500px] mx-auto">
+				v-if="!isMobile"
+				class="mockup-code bg-gray-900 text-gray-300 shadow-xl w-full lg:h-87 2xl:h-[500px] 3xl:h-[560px] mx-auto self-baseline">
 				<pre
 					data-prefix="➜"
 					class="text-success"><code>~ ./juliendy --info</code></pre>
@@ -292,7 +293,9 @@
 
 <script setup lang="ts">
 const projectsStore = useProjectsStore();
+const { width } = useWindowSize();
 
+const isMobile = computed(() => width.value < 768);
 const experiences = [
 	{
 		startDate: "julho de 2025",
